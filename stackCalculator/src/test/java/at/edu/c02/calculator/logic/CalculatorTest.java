@@ -26,6 +26,8 @@ public class CalculatorTest {
 		//verify
 		assertEquals(5, result, 0);
 		
+		int bla = 1;
+		
 
 	}
 	
