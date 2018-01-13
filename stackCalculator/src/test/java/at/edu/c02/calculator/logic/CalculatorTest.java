@@ -25,10 +25,23 @@ public class CalculatorTest {
 
 		//verify
 		assertEquals(5, result, 0);
-		
-		int bla = 1;
-		
+	
+	}
+	
+	@Test
+	public void testSimpleModOperation() throws Exception {
 
+		//setup
+		Calculator calc = new CalculatorImpl();
+		
+		//execute
+		calc.push(10);
+		calc.push(3);
+		double result = calc.perform(Operation.mod);
+
+		//verify
+		assertEquals(1, result, 0);
+	
 	}
 	
 	@Test
